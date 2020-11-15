@@ -13,6 +13,14 @@ Indexes are a basic feature of relational databases, and  PostgreSQL offers a ri
 ### 4 - Parallelism in PostgreSQL, [Presentation][8]. [Video][9].
 PostgreSQL’s architecture is process-based instead of thread-based. PostgreSQL launches a process “postmaster” on startup and after that spans a new process whenever a new client connects to PostgreSQL. Before version 10 there was no parallelism in a single connection. It is true that multiple queries from a different client can have parallelism because of process architecture, but no, In other words, a single query runs serially and did not have parallelism. This is a huge limitation because a single query cannot utilize the multi-core. PostgreSQL introduced parallelism in version 9.6. Parallelism in a sense where a single process can have multiple threads to query the system and utilize the multicore in a system. I will discuss all the parallel scans options which are in PostgreSQL with the benchmark of these scans. 
 
+### 5 - pg_stat_monitor: A cool extension for better monitoring using PMM.
+
+The pg_stat_monitor is the statistics collection tool based on PostgreSQL's contrib module pg_stat_statements. PostgreSQL’s pg_stat_statements provides only basic statistics, which is sometimes not enough. The major shortcoming in pg_stat_statements is that it accumulates all the queries and their statistics, but does not provide aggregated statistics nor histogram information. In this case, a user needs to calculate the aggregate, which is quite expensive. Pg_stat_monitor provides the pre-calculated aggregates. pg_stat_monitor collects and aggregates data on a bucket basis. The size and number of  buckets should be configured using GUC (Grand Unified Configuration). The buckets are used to collect the statistics and aggregate it in a bucket. The talk will cover the usage of pg_stat_monitor and how it is better than pg_stat_statements. pg_stat_monitor is added to PMM to collect query metrics. It gives users the ability to see examples instead of fingerprints. Pg_stat_monitor provides more accurate data because of bucket based logic. Also collecting data from pg_stat_monitor gives us better performance than pg_stat_statements.
+
+### 6 - All about PostgreSQL Security, [Presentation][10]
+PostgreSQL provides different levels of security. This talk will cover all the available security techniques used in PostgreSQL 13. We’ll look at client-side security (LibPq, JDBC) through to server-side security. It will cover all supported authentication methods and the pros and cons of all these methods. Some of the key features of the talk are: - Introduction to Cryptography - SSL, TLS, GSSAPI, and OpenSSL - Client-Side Encryption - Securing Authentication - Securing Data on the disk - Securing Backup & Basebackup - Securing Replication - Database Roles and Privileges It’s important to be familiar with all the security levels such as (1)network-level security (2) on-disk security (3) row-level, (4), and column level security. The talk will cover all the aspects with some real-life use cases and examples.
+
+
 [1]: https://github.com/ibrarahmad/PostgreSQLTalks/blob/main/PostgreSQL-FDW.pptx
 [2]: https://www.youtube.com/watch?v=7wLLb2IY51A&t=903s
 [3]: https://github.com/ibrarahmad/PostgreSQLTalks/blob/main/Performance-Tuning.pptx
@@ -22,6 +30,7 @@ PostgreSQL’s architecture is process-based instead of thread-based. PostgreSQL
 [7]: https://www.youtube.com/watch?v=4UjAMH6b0_4&t=1114s
 [8]: https://github.com/ibrarahmad/PostgreSQLTalks/blob/main/Parallel-Queries.pptx
 [9]: https://www.youtube.com/watch?v=GGGHWfDgw6A&t=752s
+[10]: https://github.com/ibrarahmad/PostgreSQLTalks/blob/main/PostgreSQL-Security.pptx
 
 
 
