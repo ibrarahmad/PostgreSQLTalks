@@ -1,9 +1,9 @@
 
-[1 - PostgreSQL Read Write Scalability](postgresql-read-write-scalability)
+[PostgreSQL Read Write Scalability](postgresql-read-write-scalability)
 
-[2 - Deep Dive To PostgreSQL Indexes](Deep-Dive-To-PostgreSQL-Indexes)
+[Deep Dive To PostgreSQL Indexes](Deep-Dive-To-PostgreSQL-Indexes)
 
-[3 - PostgreSQL And Artifical Intelegence](PostgreSQL-And-Artifical-Intelegence)
+[PostgreSQL And Artifical Intelegence](PostgreSQL-And-Artifical-Intelegence)
 
 ## PostgreSQL Read Write Scalability
 
