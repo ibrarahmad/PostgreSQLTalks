@@ -1,5 +1,5 @@
 
-[1 - PostgreSQL Read Write Scalability](PostgreSQL-Read-Write-Scalability)
+[1 - PostgreSQL Read Write Scalability](postgresql-read-write-scalability)
 
 [2 - Deep Dive To PostgreSQL Indexes](Deep-Dive-To-PostgreSQL-Indexes)
 
