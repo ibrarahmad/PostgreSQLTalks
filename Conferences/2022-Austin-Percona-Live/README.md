@@ -17,6 +17,8 @@ Read Write Scalability
 
 *Video: *
 
+### Abstract
+
 PostgreSQL is one of the leading open-source databases. Out of the box, the default PostgreSQL configuration is not tuned for any particular workload. Nowadays, production systems have quite expensive machines, which require extra configuration. PostgreSQL provides configuration parameters to configure it accordingly. Most of the time, people configure PostgreSQL according to hardware and don’t consider the workload and type of queries. In all these three cases, there’s a different set of configurations. In this talk, users will see how to configure PostgreSQL for a Read/Write intensive load. This talk will explain every important configuration parameter with real-time examples.
 
 
