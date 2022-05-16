@@ -8,21 +8,21 @@ Ibrar Ahmed is a Senior Software Architect in Percona LLC. Before coming to open
 
 ## Talks
 
-2019-Amsterdam-Percona-Live
-2019-Austin-Percona-Live
-2019-Bali-PostgreSQL-Asia
-2019-Bejings-PostgreSQL-Confernce
-2019-Milan-PostgreSQL-Europe
-2019-NY-PostgreSQL-Confernce
-2020-Brussels-Fosdem
-2020-Online-NerdearLa
-2020-Online-Percona-Live
-2020-Online-Percona-University
-2020-Online-PostgreSQL-Asia
-2020-Online-techdays-percona
-2021-NY-Deep-Dive-To-PostgreSQL-Indexes
-2022-Austin-Percona-Live
-2022-SV-PostgreSQL-Confernce
+- 2019-Amsterdam-Percona-Live
+- 2019-Austin-Percona-Live
+- 2019-Bali-PostgreSQL-Asia
+- 2019-Bejings-PostgreSQL-Confernce
+- 2019-Milan-PostgreSQL-Europe
+- 2019-NY-PostgreSQL-Confernce
+- 2020-Brussels-Fosdem
+- 2020-Online-NerdearLa
+- 2020-Online-Percona-Live
+- 2020-Online-Percona-University
+- 2020-Online-PostgreSQL-Asia
+- 2020-Online-techdays-percona
+- 2021-NY-Deep-Dive-To-PostgreSQL-Indexes
+- 2022-Austin-Percona-Live
+- 2022-SV-PostgreSQL-Confernce
 
 ## Webinars
 
