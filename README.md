@@ -1,4 +1,5 @@
-# PostgreSQLTalks
+# PostgreSQL Talks / Webinars / Tutorials
+
 PostgreSQL Conference Talks and Webinar's Presentations.
 
 ### 1 - Joining Heterogeneous Databases is a reality, not a Myth, [Presentation][1], [Video][2].
