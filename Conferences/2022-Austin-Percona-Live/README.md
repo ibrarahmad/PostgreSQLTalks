@@ -1,9 +1,4 @@
 
-[PostgreSQL Read Write Scalability](postgresql-read-write-scalability)
-
-[Deep Dive To PostgreSQL Indexes](Deep-Dive-To-PostgreSQL-Indexes)
-
-[PostgreSQL And Artifical Intelegence](PostgreSQL-And-Artifical-Intelegence)
 
 ## PostgreSQL Read Write Scalability
 
@@ -110,7 +105,6 @@ vagrant ssh
 ```bash
 
 $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-$ cat /etc/apt/sources.list.d/pgdg.list
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 $ sudo apt-get update
 $ sudo apt-get -y install postgresql-14
